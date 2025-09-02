@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Good, Fast, Cheap - Pick Two</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>The Project Triangle</h1>
+            <p class="subtitle">Good, Fast, Cheap - You can only pick two</p>
+        </header>
+
+        <main>
+            <div class="triangle-container">
+                <div class="triangle">
+                    <div class="vertex vertex-good" data-attribute="good">
+                        <span class="vertex-label">GOOD</span>
+                        <span class="vertex-description">High Quality</span>
+                    </div>
+                    <div class="vertex vertex-fast" data-attribute="fast">
+                        <span class="vertex-label">FAST</span>
+                        <span class="vertex-description">Quick Delivery</span>
+                    </div>
+                    <div class="vertex vertex-cheap" data-attribute="cheap">
+                        <span class="vertex-label">CHEAP</span>
+                        <span class="vertex-description">Low Cost</span>
+                    </div>
+                    <div class="triangle-center">
+                        <div class="impossible-zone">
+                            <span>❌</span>
+                            <span>Impossible</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <h3>Choose Your Priorities</h3>
+                <div class="checkboxes">
+                    <label class="checkbox-container good-checkbox">
+                        <input type="checkbox" id="good-checkbox" data-attribute="good">
+                        <span class="checkmark"></span>
+                        <span class="label-text">Good (High Quality)</span>
+                    </label>
+                    <label class="checkbox-container fast-checkbox">
+                        <input type="checkbox" id="fast-checkbox" data-attribute="fast">
+                        <span class="checkmark"></span>
+                        <span class="label-text">Fast (Quick Delivery)</span>
+                    </label>
+                    <label class="checkbox-container cheap-checkbox">
+                        <input type="checkbox" id="cheap-checkbox" data-attribute="cheap">
+                        <span class="checkmark"></span>
+                        <span class="label-text">Cheap (Low Cost)</span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="feedback">
+                <div class="result-card" id="result-card">
+                    <h3 id="result-title">Select your priorities above</h3>
+                    <p id="result-description">Choose up to two attributes to see what trade-offs you'll need to make.</p>
+                    <div id="result-examples" class="examples"></div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="info-section">
+                <h4>About the Project Triangle</h4>
+                <p>This principle, also known as the Iron Triangle, is fundamental in project management. It illustrates that project constraints are interconnected - improving one aspect typically requires compromising another.</p>
+                <div class="real-world-examples">
+                    <h5>Real-World Applications:</h5>
+                    <ul>
+                        <li><strong>Software Development:</strong> Feature-rich apps vs. quick MVPs vs. budget constraints</li>
+                        <li><strong>Manufacturing:</strong> Premium materials vs. production speed vs. cost efficiency</li>
+                        <li><strong>Services:</strong> Expert consultants vs. tight deadlines vs. budget limitations</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
